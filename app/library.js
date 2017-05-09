@@ -2,27 +2,27 @@
 
 module.exports = {
 
- /* Print all prime Numbers from 0 toN*/
- getPrimes: (n) => {
-  let x= 3,j,i=2,isPrime;
-       if (n<2) var primeArr=[];
-       else var primeArr=[2];
-       for (x; x<=n; x+=2){
-           Math.sqrt(x);
-           isPrime = true;
-           for (i = 2; i <= j; i++){
-                if (x % i === 0){
-                    isPrime = false;
-                    break;
-                }
-            }
-            if(isPrime){
-                primeArr.push(x);
-            }
-
-        }   
-
-        return primeArr;
+ dataTypes: (argumentSupplied) => {
+    if (typeof(argumentSupplied) == "string")
+      return argumentSupplied.length;
+    else if (typeof(argumentSupplied) == "number"){
+      if (argumentSupplied === 100)
+        return 'equal to 100';
+      else if (argumentSupplied < 100)
+        return 'less than 100';
+      else 
+        return 'more than 100';
     }
- }
+    else if (typeof(argumentSupplied) == "boolean"){
+        return argumentSupplied;
+    }
+    else if ((argumentSupplied === undefined) || (argumentSupplied === null))
+      return "no value";
+    else if ((argumentSupplied.constructor === Array) && (argumentSupplied.length >= 3) )
+        return argumentSupplied[2];
+    else if (typeof(argumentSupplied) == "function"){
+        return argumentSupplied(true);
+    }
+  }
+}
 
