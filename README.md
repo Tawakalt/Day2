@@ -1,2 +1,2 @@
-# dataTypes
-# A program with different output based on the datatype of the argument passed.
+# OOP
+# A program that models OOP implementation.
