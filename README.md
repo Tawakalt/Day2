@@ -1,2 +1,3 @@
-# dataTypes
-# A program with different output based on the datatype of the argument passed.
+# findMinMax
+# finds the minimum and maximum numbers of an array and 
+# returns an array containing the minimum and the maximum numbers only.
