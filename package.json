@@ -15,13 +15,11 @@
   },
   "author": "Olaniyi Tawakalt",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tawakalt/findMinMax/issues"
   },
   "homepage": "https://github.com/Tawakalt/findMinMax#readme",
   "dependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
-  },
-  "devDependencies": {
     "jasmine": "^2.6.0"
   }
 }
